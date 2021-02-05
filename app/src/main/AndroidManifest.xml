@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplicationreceiptify1">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        tools:replace="android:label"
+        android:label="TRASH.IO"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplicationReceiptify1">
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/title_activity_login"></activity>
+        <activity android:name=".QRCode"/>
+        <activity android:name=".QRCodeEnlarged"/>
+        <activity android:name=".SignIn"/>
+        <activity android:name=".SignUp"/>
+        <activity android:name=".RegisterSuccess"/>
+        <activity android:name=".BinCapacity"/>
+        <activity android:name=".BinDropdown"/>
+        <activity android:name=".ConfirmCleanup"/>
+        <activity android:name=".WastageAnalysis"/>
+        <activity android:name=".UsageProgression"/>
+        <activity android:name=".PastHistory"/>
+
+        <activity android:name=".HistoryDetails"/>
+        <activity android:name=".Notifications"/>
+        <activity android:name=".Profile"/>
+        <activity android:name=".PointsOne"/>
+        <activity android:name=".MyVoucher"/>
+        <activity android:name=".PointsHistory"/>
+        <activity android:name=".EditProfile"/>
+        <activity android:name=".Report"/>
+        <activity android:name=".ReportDropdown"/>
+        <activity android:name=".ReportDeviceLid"/>
+        <activity android:name=".ReportSubmitted"/>
+        <activity android:name=".ManageBins"/>
+        <activity android:name=".AddBin"/>
+        <activity android:name=".Faq"/>
+        <activity android:name=".FaqTwo"/>
+        <activity android:name=".Settings"/>
+        <activity android:name=".RecentActivity"/>
+        <activity android:name=".ActivityDetails"/>
+
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
