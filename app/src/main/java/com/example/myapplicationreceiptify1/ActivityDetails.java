@@ -9,17 +9,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ActivityDetails extends AppCompatActivity {
 
-    ImageView activityDetailsScreen;
+    ImageView crossExit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
-        activityDetailsScreen = (ImageView) findViewById(R.id.activityDetailsScreen);
+        crossExit = (ImageView) findViewById(R.id.crossExit);
 
-        activityDetailsScreen.setOnClickListener(new View.OnClickListener(){
+        crossExit.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),Profile.class));
+                startActivity(new Intent(getApplicationContext(),RecentActivity.class));
             }
         });
     }

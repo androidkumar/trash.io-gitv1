@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fbbg">
+
+    <TextView
+        android:id="@+id/backSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/backsymbol"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/whiteFbLogin"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:background="@drawable/whitefblogin"
+        android:layout_marginLeft="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_below="@id/backSymbol"
+        tools:ignore="MissingConstraints"/>
+
+
+    <EditText
+        android:id="@+id/signUpUser"
+        android:background="@color/white"
+        android:hint="     username"
+        android:layout_width="200dp"
+        android:layout_height="19dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_below="@id/whiteFbLogin"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/signUpPass"
+        android:layout_width="200dp"
+        android:layout_height="19dp"
+        android:background="@color/white"
+        android:hint="     password"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_below="@id/signUpUser"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/fbLoginBtn"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:background="@drawable/fbloginbtn"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_below="@id/signUpPass"
+        tools:ignore="MissingConstraints"/>
+
+</RelativeLayout>

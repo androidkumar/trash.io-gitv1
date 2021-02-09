@@ -10,8 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Profile extends AppCompatActivity {
 
-    ImageView recycleBar, qrCodeBar, bellBar, profBar, editSymbol;
-    TextView pointDetails, manageBins, recentActivity, report, helpCentre, settings;
+    ImageView recycleBar, qrCodeBar, bellBar, profBar;
+    TextView pointDetails, recentActivity, report, helpCentre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,26 +21,17 @@ public class Profile extends AppCompatActivity {
         qrCodeBar = (ImageView) findViewById(R.id.qrCodeBar);
         bellBar = (ImageView) findViewById(R.id.bellBar);
         profBar = (ImageView) findViewById(R.id.profBar);
-        editSymbol = (ImageView) findViewById(R.id.editSymbol);
 
         pointDetails = (TextView) findViewById(R.id.pointDetails);
-        manageBins = (TextView) findViewById(R.id.manageBins);
         recentActivity = (TextView) findViewById(R.id.recentActivity);
         report = (TextView) findViewById(R.id.report);
         helpCentre = (TextView) findViewById(R.id.helpCentre);
-        settings = (TextView) findViewById(R.id.settings);
+
 
         pointDetails.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(),PointsOne.class));
-            }
-        });
-
-        manageBins.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),ManageBins.class));
             }
         });
 
@@ -66,12 +57,6 @@ public class Profile extends AppCompatActivity {
         });
 
 
-        settings.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),Settings.class));
-            }
-        });
 
         qrCodeBar.setOnClickListener(new View.OnClickListener(){
 
@@ -97,13 +82,7 @@ public class Profile extends AppCompatActivity {
             }
         });
 
-        editSymbol.setOnClickListener(new View.OnClickListener(){
 
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),EditProfile.class));
-            }
-        });
     }
 
 }

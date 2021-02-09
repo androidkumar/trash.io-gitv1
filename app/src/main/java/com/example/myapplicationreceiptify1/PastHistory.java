@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class PastHistory extends AppCompatActivity {
     TextView backSymbol;
-    ImageView organicDetail;
+    ImageView organicDetail, organicDetailTwo, plasticDetail, plasticDetailTwo, paperDetail, paperDetailTwo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,12 @@ public class PastHistory extends AppCompatActivity {
         backSymbol = (TextView) findViewById(R.id.backSymbol);
 
         organicDetail = (ImageView) findViewById(R.id.organicDetail);
+
+        organicDetailTwo = (ImageView) findViewById(R.id.organicDetailTwo);
+        plasticDetail = (ImageView) findViewById(R.id.plasticDetail);
+        plasticDetailTwo = (ImageView) findViewById(R.id.plasticDetailTwo);
+        paperDetail = (ImageView) findViewById(R.id.paperDetail);
+        paperDetailTwo = (ImageView) findViewById(R.id.paperDetailTwo);
 
         backSymbol.setOnClickListener(new View.OnClickListener(){
 
@@ -37,6 +43,45 @@ public class PastHistory extends AppCompatActivity {
             }
         });
 
+        organicDetailTwo.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),OrganicTwoDetails.class));
+            }
+        });
+
+        plasticDetail.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),PlasticDetails.class));
+            }
+        });
+
+        plasticDetailTwo.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),PlasticTwoDetails.class));
+            }
+        });
+
+        paperDetail.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),PaperDetails.class));
+            }
+        });
+
+        paperDetailTwo.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),PaperTwoDetails.class));
+            }
+        });
 
     }
 }

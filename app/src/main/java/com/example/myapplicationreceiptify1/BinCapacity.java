@@ -18,7 +18,7 @@ import com.scanlibrary.ScanConstants;
 import java.io.IOException;
 
 public class BinCapacity extends AppCompatActivity {
-    ImageView  recycleBar, qrCodeBar, bellBar, profBar, binThree;
+    ImageView  recycleBar, qrCodeBar, bellBar, profBar, binOne;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -29,9 +29,9 @@ public class BinCapacity extends AppCompatActivity {
         qrCodeBar = (ImageView) findViewById(R.id.qrCodeBar);
         bellBar = (ImageView) findViewById(R.id.bellBar);
         profBar = (ImageView) findViewById(R.id.profBar);
-        binThree = (ImageView) findViewById(R.id.binThree);
+        binOne = (ImageView) findViewById(R.id.binThree);
 
-       binThree.setOnClickListener(new View.OnClickListener(){
+       binOne.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {

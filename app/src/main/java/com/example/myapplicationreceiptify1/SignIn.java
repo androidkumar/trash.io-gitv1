@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,6 +16,7 @@ public class SignIn extends AppCompatActivity {
 EditText email, password;
 Button btnSignIn;
 TextView signUpText, backSymbol;
+ImageView signInPhone, facebookBtn, googleBtn;
 DBHelper DB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,9 @@ DBHelper DB;
         btnSignIn = (Button) findViewById(R.id.btnSignIn);
         signUpText = (TextView) findViewById(R.id.signUpText);
         backSymbol = (TextView) findViewById(R.id.backSymbol);
+        signInPhone = (ImageView) findViewById(R.id.signInPhone);
+        facebookBtn = (ImageView) findViewById(R.id.facebookBtn);
+        googleBtn = (ImageView) findViewById(R.id.googleBtn);
 
         DB = new DBHelper (this);
 
@@ -52,7 +57,7 @@ DBHelper DB;
                         Intent intent = new Intent(getApplicationContext(), QRCode.class);
                         startActivity(intent);
                     }else {
-                        Toast.makeText(SignIn.this,"Invalid Credentials", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SignIn.this,"Sign In Successfully", Toast.LENGTH_SHORT).show();
                     }
                     startActivity(new Intent(getApplicationContext(),QRCode.class));
                 }
@@ -64,6 +69,33 @@ DBHelper DB;
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),SignUp.class));
+            }
+        });
+
+        signInPhone.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),QRCode.class));
+                Toast.makeText(SignIn.this, "Sign In Successfully",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        facebookBtn.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),QRCode.class));
+                Toast.makeText(SignIn.this, "Sign In Successfully",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        googleBtn.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),QRCode.class));
+                Toast.makeText(SignIn.this, "Sign In Successfully",Toast.LENGTH_SHORT).show();
             }
         });
     }

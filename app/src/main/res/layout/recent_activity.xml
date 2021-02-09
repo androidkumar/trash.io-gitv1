@@ -7,6 +7,13 @@
     android:layout_height="match_parent"
     android:background="@color/mainBackgroud">
 
+    <TextView
+        android:id="@+id/backSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backsymbol"
+        tools:ignore="MissingConstraints" />
+
     <ImageView
         android:id="@+id/recentActivityScreen"
         android:layout_width="match_parent"
@@ -24,7 +31,31 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
         android:layout_marginLeft="340dp"
-        android:background="@drawable/paperdetails"
+        android:background="@drawable/organicdetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/tinDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="340dp"
+        android:background="@drawable/organicdetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/plasticDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="340dp"
+        android:background="@drawable/organicdetail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

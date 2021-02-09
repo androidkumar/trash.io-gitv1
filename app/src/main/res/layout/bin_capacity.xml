@@ -27,37 +27,11 @@
         android:layout_height="wrap_content"
         android:background="@drawable/bin1"
         android:layout_marginLeft="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/capacityText"
-        tools:ignore="MissingConstraints"/>
-
-
-    <ImageView
-        android:id="@+id/binTwo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bin2"
-        android:layout_marginLeft="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/binOne"
-        tools:ignore="MissingConstraints"/>
-
-
-    <ImageView
-        android:id="@+id/binThree"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bin3"
-        android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/binTwo"
+        android:layout_below="@id/capacityText"
         tools:ignore="MissingConstraints"/>
 
     <ImageView
@@ -69,7 +43,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/binThree"
+        android:layout_below="@id/binOne"
         android:layout_marginTop="350dp"
         tools:ignore="MissingConstraints" />
 
@@ -82,7 +56,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/binThree"
+        android:layout_below="@id/binOne"
         android:layout_marginTop="350dp"
         tools:ignore="MissingConstraints" />
 
@@ -95,7 +69,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/binThree"
+        android:layout_below="@id/binOne"
         android:layout_marginTop="350dp"
         tools:ignore="MissingConstraints" />
 
@@ -109,7 +83,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/binThree"
+        android:layout_below="@id/binOne"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -121,7 +95,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/binThree"
+        android:layout_below="@id/binOne"
         android:layout_marginTop="350dp"
         tools:ignore="MissingConstraints" />
 

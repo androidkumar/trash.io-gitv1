@@ -19,18 +19,7 @@
 
         tools:ignore="MissingConstraints"/>
 
-    <ImageView
-        android:id="@+id/editSymbol"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/editsymbol"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="330dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
 
-        tools:ignore="MissingConstraints"/>
 
     <TextView
         android:id="@+id/pointDetails"
@@ -44,17 +33,6 @@
         android:layout_below="@+id/profileUpBar"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/manageBins"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/managebins"
-        android:layout_marginLeft="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@+id/pointDetails"
-        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/recentActivity"
@@ -65,7 +43,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@+id/manageBins"
+        android:layout_below="@+id/pointDetails"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -92,17 +70,6 @@
         android:layout_below="@+id/report"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/settings"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/settings"
-        android:layout_marginLeft="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@+id/helpCentre"
-        tools:ignore="MissingConstraints" />
 
 
     <ImageView
@@ -114,7 +81,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/settings"
+        android:layout_below="@id/helpCentre"
         android:layout_marginTop="70dp"
         tools:ignore="MissingConstraints" />
 
@@ -127,7 +94,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/settings"
+        android:layout_below="@id/helpCentre"
         android:layout_marginTop="70dp"
         tools:ignore="MissingConstraints" />
 
@@ -140,7 +107,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/settings"
+        android:layout_below="@id/helpCentre"
         android:layout_marginTop="70dp"
         tools:ignore="MissingConstraints" />
 
@@ -154,7 +121,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/settings"
+        android:layout_below="@id/helpCentre"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -166,7 +133,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/settings"
+        android:layout_below="@id/helpCentre"
         android:layout_marginTop="70dp"
         tools:ignore="MissingConstraints" />
 

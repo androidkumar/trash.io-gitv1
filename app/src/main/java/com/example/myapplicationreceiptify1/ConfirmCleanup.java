@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ConfirmCleanup extends AppCompatActivity {
 
-    ImageView btnLater;
+    ImageView btnLater, startNow;
 
 
     @Override
@@ -19,10 +19,17 @@ public class ConfirmCleanup extends AppCompatActivity {
         setContentView(R.layout.confirm_cleanup);
 
         btnLater = (ImageView) findViewById(R.id.btnLater);
-
+        startNow = (ImageView) findViewById(R.id.startNow);
 
 
         btnLater.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),BinDropdown.class));
+            }
+        });
+
+        startNow.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(),BinDropdown.class));

@@ -27,10 +27,10 @@
         tools:ignore="MissingConstraints" />
 
     <ImageView
-        android:id="@+id/signUpPhone"
+        android:id="@+id/signInPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/signupphone"
+        android:background="@drawable/signinphone"
         android:layout_marginLeft="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,7 +47,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/signUpPhone"
+        android:layout_below="@id/signInPhone"
         tools:ignore="MissingConstraints"/>
 
     <ImageView
@@ -59,7 +59,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/signUpPhone"
+        android:layout_below="@id/signInPhone"
         tools:ignore="MissingConstraints"/>
 
     <TextView

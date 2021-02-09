@@ -61,4 +61,69 @@
         android:layout_below="@id/rectPastHistory"
         tools:ignore="MissingConstraints"/>
 
+    <ImageView
+        android:id="@+id/plasticDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/organicdetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="300dp"
+        android:layout_below="@id/rectPastHistory"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:id="@+id/paperDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/organicdetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="300dp"
+        android:layout_below="@id/rectPastHistory"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:id="@+id/plasticDetailTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/organicdetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="300dp"
+        android:layout_below="@id/rectPastHistory"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:id="@+id/organicDetailTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/organicdetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="300dp"
+        android:layout_below="@id/rectPastHistory"
+        tools:ignore="MissingConstraints"/>
+
+    <ImageView
+        android:id="@+id/paperDetailTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/organicdetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="470dp"
+        android:layout_marginLeft="300dp"
+        android:layout_below="@id/rectPastHistory"
+        tools:ignore="MissingConstraints"/>
+
 </RelativeLayout>

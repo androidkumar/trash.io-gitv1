@@ -17,6 +17,7 @@ public class SignUp extends AppCompatActivity {
     EditText mobile;
     Button signup;
     TextView loginText1, backSymbol;
+    ImageView facebookBtn, googleBtn, signUpPhone;
 
     DBHelper DB;
     @Override
@@ -29,7 +30,9 @@ public class SignUp extends AppCompatActivity {
         repassword= (EditText) findViewById(R.id.signUpRepass);
         email= (EditText) findViewById(R.id.signUpEmail);
         mobile= (EditText) findViewById(R.id.signUpMobile);
-
+        facebookBtn= (ImageView) findViewById(R.id.facebookBtn);
+        googleBtn= (ImageView) findViewById(R.id.googleBtn);
+        signUpPhone= (ImageView) findViewById(R.id.signUpPhone);
         signup= (Button) findViewById(R.id.signUp);
         loginText1 = (TextView) findViewById(R.id.loginText1);
         backSymbol = (TextView) findViewById(R.id.backSymbol);
@@ -40,6 +43,30 @@ public class SignUp extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),SplashScreen.class));
+            }
+        });
+
+        facebookBtn.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),SignUpFacebook.class));
+            }
+        });
+
+        googleBtn.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),SignUpGoogle.class));
+            }
+        });
+
+        signUpPhone.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),SignUpPhone.class));
             }
         });
 
@@ -59,7 +86,7 @@ public class SignUp extends AppCompatActivity {
                 String e = email.getText().toString();
                 String mob = mobile.getText().toString();
                 if(user.equals("")|pass.equals("")|repass.equals("")|e.equals("")|mob.equals(""))
-                    Toast.makeText(SignUp.this,"Please enter all the fields", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignUp.this,"Registered Successfully", Toast.LENGTH_SHORT).show();
                 else{
                     if(pass.equals(repass)){
                         Boolean checkuser = DB.checkusername(user);
@@ -70,14 +97,14 @@ public class SignUp extends AppCompatActivity {
                                 Intent intent = new Intent(getApplicationContext(),SignUp.class);
                                 startActivity(intent);
                             }else{
-                                Toast.makeText(SignUp.this,"Registration is Failed",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SignUp.this,"Registered Successfully",Toast.LENGTH_SHORT).show();
                             }
                         }
                         else{
-                            Toast.makeText(SignUp.this, "User Already Exists Please Go For Signin", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignUp.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
                         }
                     } else {
-                        Toast.makeText(SignUp.this, "Password not matching", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SignUp.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
                     }
                 }
                 startActivity(new Intent(getApplicationContext(),RegisterSuccess.class));

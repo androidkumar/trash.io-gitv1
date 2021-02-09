@@ -22,6 +22,9 @@
         <activity android:name=".QRCodeEnlarged"/>
         <activity android:name=".SignIn"/>
         <activity android:name=".SignUp"/>
+        <activity android:name=".SignUpFacebook"/>
+        <activity android:name=".SignUpGoogle"/>
+        <activity android:name=".SignUpPhone"/>
         <activity android:name=".RegisterSuccess"/>
         <activity android:name=".BinCapacity"/>
         <activity android:name=".BinDropdown"/>
@@ -31,6 +34,12 @@
         <activity android:name=".PastHistory"/>
 
         <activity android:name=".HistoryDetails"/>
+        <activity android:name=".PlasticDetails"/>
+        <activity android:name=".PaperDetails"/>
+        <activity android:name=".PlasticTwoDetails"/>
+        <activity android:name=".OrganicTwoDetails"/>
+        <activity android:name=".PaperTwoDetails"/>
+
         <activity android:name=".Notifications"/>
         <activity android:name=".Profile"/>
         <activity android:name=".PointsOne"/>
@@ -48,6 +57,8 @@
         <activity android:name=".Settings"/>
         <activity android:name=".RecentActivity"/>
         <activity android:name=".ActivityDetails"/>
+        <activity android:name=".ActivityDetailsOne"/>
+        <activity android:name=".ActivityDetailsTwo"/>
 
         <activity android:name=".SplashScreen">
             <intent-filter>
