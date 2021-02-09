@@ -1,145 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/mainBackgroud">
+
+
     <TextView
         android:id="@+id/backSymbol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
         android:background="@drawable/backsymbol"
+        app:layout_constraintEnd_toStartOf="@+id/signUpTitle"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/signUpTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/backSymbol"
+        android:layout_marginTop="32dp"
         android:background="@drawable/signuptitle"
-        android:layout_marginLeft="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/backSymbol"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/googleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signInPhone"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/googlebtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signInPhone"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/signInPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/signUpTitle"
+        android:layout_marginTop="24dp"
         android:background="@drawable/signinphone"
-        android:layout_marginLeft="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/signUpTitle"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintTop_toBottomOf="@+id/signUpTitle"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/facebookBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/signInPhone"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/facebookbtn"
-        android:layout_marginLeft="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/signInPhone"
-        tools:ignore="MissingConstraints"/>
-
-    <ImageView
-        android:id="@+id/googleBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/googlebtn"
-        android:layout_marginLeft="190dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/signInPhone"
-        tools:ignore="MissingConstraints"/>
-
-    <TextView
-        android:id="@+id/orSignUp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/orsignup"
-        android:layout_marginLeft="100dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/facebookBtn"
+        app:layout_constraintTop_toBottomOf="@+id/signInPhone"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/textEmailAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/orSignUp"
+        android:layout_marginTop="24dp"
         android:background="@color/white"
         android:ems="10"
         android:hint="     email address"
         android:inputType="textEmailAddress"
-        android:layout_marginLeft="100dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/orSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/orSignUp"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/textPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/textEmailAddress"
+        android:layout_marginTop="24dp"
         android:background="@color/white"
         android:ems="10"
         android:hint="     password"
         android:inputType="textPassword"
-        android:layout_marginLeft="100dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/textEmailAddress"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgotPassText"
+        android:layout_marginTop="24dp"
+        android:text="Log In"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPassText"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/forgotPassText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/textPassword"
+        android:layout_marginTop="24dp"
         android:background="@drawable/forgotpasstext"
-        android:layout_marginLeft="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/textPassword"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintTop_toBottomOf="@+id/textPassword"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/signUpText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/btnSignIn"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/signuptext"
-        android:layout_marginLeft="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/btnSignIn"
         tools:ignore="MissingConstraints" />
 
-
-
-
-    <Button
-        android:id="@+id/btnSignIn"
+    <TextView
+        android:id="@+id/orSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Log In"
-        android:layout_marginLeft="100dp"
+        android:layout_below="@id/facebookBtn"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/orsignup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/forgotPassText"
+        app:layout_constraintTop_toBottomOf="@+id/googleBtn"
         tools:ignore="MissingConstraints" />
-</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
