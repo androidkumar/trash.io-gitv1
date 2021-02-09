@@ -29,7 +29,7 @@ public class BinCapacity extends AppCompatActivity {
         qrCodeBar = (ImageView) findViewById(R.id.qrCodeBar);
         bellBar = (ImageView) findViewById(R.id.bellBar);
         profBar = (ImageView) findViewById(R.id.profBar);
-        binOne = (ImageView) findViewById(R.id.binThree);
+        binOne = (ImageView) findViewById(R.id.binOne);
 
        binOne.setOnClickListener(new View.OnClickListener(){
 

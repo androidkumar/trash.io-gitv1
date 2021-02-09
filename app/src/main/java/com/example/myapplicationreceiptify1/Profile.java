@@ -10,14 +10,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Profile extends AppCompatActivity {
 
-    ImageView recycleBar, qrCodeBar, bellBar, profBar;
+    ImageView recycleBarProf, qrCodeBar, bellBar, profBar;
     TextView pointDetails, recentActivity, report, helpCentre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile);
-        recycleBar = (ImageView) findViewById(R.id.recycleBar);
+        recycleBarProf = (ImageView) findViewById(R.id.recycleBarProf);
         qrCodeBar = (ImageView) findViewById(R.id.qrCodeBar);
         bellBar = (ImageView) findViewById(R.id.bellBar);
         profBar = (ImageView) findViewById(R.id.profBar);
@@ -82,7 +82,7 @@ public class Profile extends AppCompatActivity {
             }
         });
 
-        recycleBar.setOnClickListener(new View.OnClickListener(){
+        recycleBarProf.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
