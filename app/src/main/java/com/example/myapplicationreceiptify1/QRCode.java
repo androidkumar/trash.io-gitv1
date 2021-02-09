@@ -21,6 +21,8 @@ import com.scanlibrary.ScanConstants;
 
 public class QRCode extends AppCompatActivity {
     ImageView  recycleBar, qrCodeBar, bellBar, profBar;
+    TextView receiveBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -33,8 +35,16 @@ public class QRCode extends AppCompatActivity {
         qrCodeBar = (ImageView) findViewById(R.id.qrCodeBar);
         bellBar = (ImageView) findViewById(R.id.bellBar);
         profBar = (ImageView) findViewById(R.id.profBar);
+        receiveBtn = (TextView) findViewById(R.id.receiveBtn);
 
 
+        receiveBtn.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),QRCodeEnlarged.class));
+            }
+        });
 
         recycleBar.setOnClickListener(new View.OnClickListener(){
 
