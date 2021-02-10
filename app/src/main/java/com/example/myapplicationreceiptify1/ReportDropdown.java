@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ReportDropdown extends AppCompatActivity {
 
-    TextView deviceLid, mobileAppErrors, deviceSorting,deviceCleaning, deviceVoice;
+    TextView deviceLid, mobileAppErrors, deviceSorting,deviceCleaning, deviceVoice, backSymbol;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +20,14 @@ public class ReportDropdown extends AppCompatActivity {
         deviceCleaning = (TextView) findViewById(R.id.deviceCleaning);
         deviceVoice = (TextView) findViewById(R.id.deviceVoice);
         mobileAppErrors = (TextView) findViewById(R.id.mobileAppErrors);
+        backSymbol = (TextView) findViewById(R.id.backSymbol);
+
+       backSymbol.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),Report.class));
+            }
+        });
 
         deviceLid.setOnClickListener(new View.OnClickListener(){
             @Override
