@@ -7,6 +7,13 @@
     android:layout_height="match_parent"
     android:background="@color/mainBackgroud">
 
+    <TextView
+        android:id="@+id/backSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backsymbol"
+        tools:ignore="MissingConstraints" />
+
     <ImageView
         android:id="@+id/reportScreen"
         android:layout_width="match_parent"
@@ -21,12 +28,21 @@
         android:id="@+id/reportDropdown"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/reportdropdown"
+        android:background="@drawable/dropdown"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="220dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/mobileAppErrors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/mobileapperrors"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/deviceLid"
@@ -35,6 +51,33 @@
         android:layout_marginTop="350dp"
         android:layout_marginLeft="40dp"
         android:background="@drawable/devicelid"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/deviceSorting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/devicesorting"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/deviceCleaning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/devicecleaning"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/deviceVoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/devicevoice"
         tools:ignore="MissingConstraints" />
 
 </RelativeLayout>

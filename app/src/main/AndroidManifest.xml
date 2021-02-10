@@ -49,6 +49,11 @@
         <activity android:name=".Report"/>
         <activity android:name=".ReportDropdown"/>
         <activity android:name=".ReportDeviceLid"/>
+        <activity android:name=".ReportMobile"/>
+        <activity android:name=".ReportSorting"/>
+        <activity android:name=".ReportCleaning"/>
+        <activity android:name=".ReportVoice"/>
+
         <activity android:name=".ReportSubmitted"/>
         <activity android:name=".ManageBins"/>
         <activity android:name=".AddBin"/>

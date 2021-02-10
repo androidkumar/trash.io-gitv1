@@ -8,28 +8,27 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Report extends AppCompatActivity {
-
-    ImageView reasonBtn;
+public class ReportMobile extends AppCompatActivity {
     TextView backSymbol;
+    ImageView submitBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.report);
-        reasonBtn = (ImageView) findViewById(R.id.reasonBtn);
+        setContentView(R.layout.report_mobile);
+        submitBtn = (ImageView) findViewById(R.id.submitBtn);
         backSymbol = (TextView) findViewById(R.id.backSymbol);
-
-        reasonBtn.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),ReportDropdown.class));
-            }
-        });
 
         backSymbol.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),Profile.class));
+                startActivity(new Intent(getApplicationContext(),Report.class));
+            }
+        });
+
+        submitBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),ReportSubmitted.class));
             }
         });
     }
