@@ -10,17 +10,49 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ReportDropdown extends AppCompatActivity {
 
-    TextView deviceLid;
+    TextView deviceLid, mobileAppErrors, deviceSorting,deviceCleaning, deviceVoice;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.report_dropdown);
         deviceLid = (TextView) findViewById(R.id.deviceLid);
+        deviceSorting = (TextView) findViewById(R.id.deviceSorting);
+        deviceCleaning = (TextView) findViewById(R.id.deviceCleaning);
+        deviceVoice = (TextView) findViewById(R.id.deviceVoice);
+        mobileAppErrors = (TextView) findViewById(R.id.mobileAppErrors);
 
         deviceLid.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(),ReportDeviceLid.class));
+            }
+        });
+
+        deviceSorting.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),ReportSorting.class));
+            }
+        });
+
+        deviceCleaning.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),ReportCleaning.class));
+            }
+        });
+
+        deviceVoice.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),ReportVoice.class));
+            }
+        });
+
+        mobileAppErrors.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),ReportMobile.class));
             }
         });
     }
