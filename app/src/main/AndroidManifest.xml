@@ -59,6 +59,11 @@
         <activity android:name=".AddBin"/>
         <activity android:name=".Faq"/>
         <activity android:name=".FaqTwo"/>
+
+        <activity android:name=".FaqTwoTwo"/>
+        <activity android:name=".FaqTwoThree"/>
+        <activity android:name=".FaqTwoFour"/>
+
         <activity android:name=".Settings"/>
         <activity android:name=".RecentActivity"/>
         <activity android:name=".ActivityDetails"/>
