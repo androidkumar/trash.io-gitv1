@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -13,77 +13,75 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/notificationstab"
-        android:layout_marginLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
-        tools:ignore="MissingConstraints"/>
+        tools:ignore="MissingConstraints" />
 
 
     <ImageView
         android:id="@+id/navBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/notificationsTab"
         android:background="@drawable/navbar"
-        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/notificationsTab"
-        android:layout_marginTop="0dp"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/recycleBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/recyclebar"
-        android:layout_marginLeft="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_below="@id/notificationsTab"
+        android:layout_marginStart="56dp"
+        android:background="@drawable/recyclebar"
+        app:layout_constraintBottom_toBottomOf="@+id/navBar"
+        app:layout_constraintStart_toStartOf="@+id/navBar"
+        app:layout_constraintTop_toTopOf="@+id/navBar"
+        app:layout_constraintVertical_bias="0.44"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/qrCodeBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/qrcodebar"
-        android:layout_marginLeft="120dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_below="@id/notificationsTab"
+        android:layout_marginStart="48dp"
+        android:background="@drawable/qrcodebar"
+        app:layout_constraintBottom_toBottomOf="@+id/navBar"
+        app:layout_constraintStart_toEndOf="@+id/recycleBar"
+        app:layout_constraintTop_toTopOf="@+id/navBar"
+        app:layout_constraintVertical_bias="0.45"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/bellBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/bellbar"
-        android:layout_marginLeft="190dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_below="@id/notificationsTab"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/bellbar"
+        app:layout_constraintBottom_toBottomOf="@+id/navBar"
+        app:layout_constraintEnd_toStartOf="@+id/profBar"
+        app:layout_constraintTop_toTopOf="@+id/navBar"
+        app:layout_constraintVertical_bias="0.44"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/profBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/profbar"
-        android:layout_marginLeft="260dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_below="@id/notificationsTab"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/profbar"
+        app:layout_constraintBottom_toBottomOf="@+id/navBar"
+        app:layout_constraintEnd_toEndOf="@+id/navBar"
+        app:layout_constraintTop_toTopOf="@+id/navBar"
+        app:layout_constraintVertical_bias="0.44"
         tools:ignore="MissingConstraints" />
 
 
-
-
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

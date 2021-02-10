@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -12,94 +12,89 @@
         android:id="@+id/capacityText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:background="@drawable/capacitytxt"
-        android:layout_marginLeft="150dp"
+        android:fontFamily="sans-serif"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
         tools:ignore="MissingConstraints" />
-
 
     <ImageView
         android:id="@+id/binOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/capacityText"
+        android:layout_marginTop="32dp"
         android:background="@drawable/bin1"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/capacityText"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintTop_toBottomOf="@+id/capacityText"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/navBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/binOne"
         android:background="@drawable/navbar"
-        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/binOne"
-        android:layout_marginTop="350dp"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/recycleBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/recyclebar"
-        android:layout_marginLeft="80dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_below="@id/binOne"
-        android:layout_marginTop="350dp"
+        android:layout_marginStart="56dp"
+        android:background="@drawable/recyclebar"
+        app:layout_constraintBottom_toBottomOf="@+id/navBar"
+        app:layout_constraintStart_toStartOf="@+id/navBar"
+        app:layout_constraintTop_toTopOf="@+id/navBar"
+        app:layout_constraintVertical_bias="0.45"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/qrCodeBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/qrcodebar"
-        android:layout_marginLeft="120dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_below="@id/binOne"
-        android:layout_marginTop="350dp"
+        android:layout_marginStart="48dp"
+        android:background="@drawable/qrcodebar"
+        app:layout_constraintBottom_toBottomOf="@+id/navBar"
+        app:layout_constraintStart_toEndOf="@+id/recycleBar"
+        app:layout_constraintTop_toTopOf="@+id/navBar"
+        app:layout_constraintVertical_bias="0.45"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/bellBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/bellbar"
-        android:layout_marginLeft="190dp"
-        android:layout_marginTop="350dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_below="@id/binOne"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/bellbar"
+        app:layout_constraintBottom_toBottomOf="@+id/navBar"
+        app:layout_constraintEnd_toStartOf="@+id/profBar"
+        app:layout_constraintTop_toTopOf="@+id/navBar"
+        app:layout_constraintVertical_bias="0.45"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/profBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/profbar"
-        android:layout_marginLeft="260dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_below="@id/binOne"
-        android:layout_marginTop="350dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/profbar"
+        app:layout_constraintBottom_toBottomOf="@+id/navBar"
+        app:layout_constraintEnd_toEndOf="@+id/navBar"
+        app:layout_constraintTop_toTopOf="@+id/navBar"
+        app:layout_constraintVertical_bias="0.45"
         tools:ignore="MissingConstraints" />
 
 
-
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

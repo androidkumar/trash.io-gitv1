@@ -1,66 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/mainBackgroud">
+
     <TextView
         android:id="@+id/backSymbol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:background="@drawable/backsymbol"
+        app:layout_constraintEnd_toStartOf="@+id/pointsTitle"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/pointsTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:background="@drawable/pointstitle"
-        android:layout_marginLeft="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
+
     <ImageView
         android:id="@+id/pointsScroll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/pointsTitle"
+        android:layout_marginTop="24dp"
         android:background="@drawable/pointsscroll"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/pointsTitle"
-        tools:ignore="MissingConstraints"/>
-
+        app:layout_constraintTop_toBottomOf="@+id/pointsTitle"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/viewPointsHist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
         android:background="@drawable/viewpointshist"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="140dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintTop_toTopOf="@+id/pointsScroll"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/viewVouchers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/viewvouchers"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="200dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintTop_toBottomOf="@+id/viewPointsHist"
+        tools:ignore="MissingConstraints" />
 
 
-
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

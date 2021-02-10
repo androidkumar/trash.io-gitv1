@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,16 +8,27 @@
     android:background="@color/mainBackgroud">
 
 
+    <ImageView
+        android:id="@+id/rectBinDropdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/binThree"
+        android:background="@drawable/rectbindropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/binThree"
+        tools:ignore="MissingConstraints" />
+
     <TextView
         android:id="@+id/capacityText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:background="@drawable/capacitytxt"
-        android:layout_marginLeft="150dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
 
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
 
@@ -25,142 +36,125 @@
         android:id="@+id/binThree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/bin1"
-        android:layout_marginLeft="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_below="@id/capacityText"
-        tools:ignore="MissingConstraints"/>
-
-    <ImageView
-        android:id="@+id/rectBinDropdown"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rectbindropdown"
-        android:layout_marginLeft="30dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bin1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/binThree"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintTop_toBottomOf="@+id/capacityText"
+        tools:ignore="MissingConstraints" />
+
 
     <ImageView
         android:id="@+id/binDropDownBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/bindropdownbox"
-        android:layout_marginLeft="80dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_below="@id/binThree"
-        tools:ignore="MissingConstraints"/>
+        android:background="@drawable/bindropdownbox"
+        app:layout_constraintEnd_toEndOf="@+id/rectBinDropdown"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/rectBinDropdown"
+        app:layout_constraintTop_toBottomOf="@+id/binThree"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/cleanupNow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/cleanupnow"
-        android:layout_marginLeft="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_below="@id/binDropDownBox"
-        tools:ignore="MissingConstraints"/>
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/cleanupnow"
+        app:layout_constraintEnd_toEndOf="@+id/rectBinDropdown"
+        app:layout_constraintStart_toStartOf="@+id/rectBinDropdown"
+        app:layout_constraintTop_toBottomOf="@+id/binDropDownBox"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/wastageAnalysis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/wastageanalysis"
-        android:layout_marginLeft="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_below="@id/cleanupNow"
-        tools:ignore="MissingConstraints"/>
+        android:background="@drawable/wastageanalysis"
+        app:layout_constraintEnd_toEndOf="@+id/rectBinDropdown"
+        app:layout_constraintStart_toStartOf="@+id/rectBinDropdown"
+        app:layout_constraintTop_toBottomOf="@+id/cleanupNow"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/pastHisBinDropdown"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/pasthistory"
-        android:layout_marginLeft="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_below="@id/wastageAnalysis"
-        tools:ignore="MissingConstraints"/>
+        android:background="@drawable/pasthistory"
+        app:layout_constraintEnd_toEndOf="@+id/rectBinDropdown"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/rectBinDropdown"
+        app:layout_constraintTop_toBottomOf="@+id/wastageAnalysis"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/navBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/pastHisBinDropdown"
         android:background="@drawable/navbar"
-        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_below="@id/pastHisBinDropdown"
-        android:layout_marginTop="80dp"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/recycleBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/recyclebar"
-        android:layout_marginLeft="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_below="@id/binThree"
-        android:layout_marginTop="350dp"
+        android:layout_marginStart="56dp"
+        android:background="@drawable/recyclebar"
+        app:layout_constraintBottom_toBottomOf="@+id/navBar"
+        app:layout_constraintStart_toStartOf="@+id/navBar"
+        app:layout_constraintTop_toTopOf="@+id/navBar"
+        app:layout_constraintVertical_bias="0.45999998"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/qrCodeBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/qrcodebar"
-        android:layout_marginLeft="120dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_below="@id/binThree"
-        android:layout_marginTop="350dp"
+        android:layout_marginStart="48dp"
+        android:background="@drawable/qrcodebar"
+        app:layout_constraintBottom_toBottomOf="@+id/navBar"
+        app:layout_constraintStart_toEndOf="@+id/recycleBar"
+        app:layout_constraintTop_toTopOf="@+id/navBar"
+        app:layout_constraintVertical_bias="0.45999998"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/bellBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/bellbar"
-        android:layout_marginLeft="190dp"
-        android:layout_marginTop="350dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_below="@id/binThree"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/bellbar"
+        app:layout_constraintBottom_toBottomOf="@+id/navBar"
+        app:layout_constraintEnd_toStartOf="@+id/profBar"
+        app:layout_constraintTop_toTopOf="@+id/navBar"
+        app:layout_constraintVertical_bias="0.45"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/profBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/profbar"
-        android:layout_marginLeft="260dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_below="@id/binThree"
-        android:layout_marginTop="350dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/profbar"
+        app:layout_constraintBottom_toBottomOf="@+id/navBar"
+        app:layout_constraintEnd_toEndOf="@+id/navBar"
+        app:layout_constraintTop_toTopOf="@+id/navBar"
+        app:layout_constraintVertical_bias="0.45999998"
         tools:ignore="MissingConstraints" />
 
 
-
-
-
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
