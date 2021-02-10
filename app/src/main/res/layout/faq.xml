@@ -10,8 +10,8 @@
     <ImageView
         android:id="@+id/faqQuesBtn"
         android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:layout_marginTop="80dp"
+        android:layout_height="wrap_content"
+
         android:background="@drawable/faqquesbtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,16 +19,38 @@
         tools:ignore="MissingConstraints" />
 
     <ImageView
-        android:id="@+id/faqOne"
+        android:id="@+id/faqQuesBtnTwo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/faqone"
+        android:background="@drawable/faqquesbtntwo"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="30dp"
+        android:layout_below="@+id/faqQuesBtn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"/>
 
+    <ImageView
+        android:id="@+id/faqQuesBtnThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/faqquesbtnthree"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_below="@+id/faqQuesBtnTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"/>
+
+
+    <ImageView
+        android:id="@+id/faqQuesBtnFour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/faqquesbtnfour"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_below="@+id/faqQuesBtnThree"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"/>
 
 
 </RelativeLayout>
