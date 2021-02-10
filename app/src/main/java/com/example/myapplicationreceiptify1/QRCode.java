@@ -20,7 +20,7 @@ import com.scanlibrary.ScanActivity;
 import com.scanlibrary.ScanConstants;
 
 public class QRCode extends AppCompatActivity {
-    ImageView  recycleBar, qrCodeBar, bellBar, profBar;
+    ImageView  recycleBar, qrCodeBar, bellBar, profBar, logoutImg;
     TextView receiveBtn;
 
     @Override
@@ -30,7 +30,7 @@ public class QRCode extends AppCompatActivity {
         setContentView(R.layout.qr_code);
 
 
-
+        logoutImg = (ImageView) findViewById(R.id.logoutImg);
         recycleBar = (ImageView) findViewById(R.id.recycleBar);
         qrCodeBar = (ImageView) findViewById(R.id.qrCodeBar);
         bellBar = (ImageView) findViewById(R.id.bellBar);
@@ -43,6 +43,14 @@ public class QRCode extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),QRCodeEnlarged.class));
+            }
+        });
+
+        logoutImg.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),SplashScreen.class));
             }
         });
 
