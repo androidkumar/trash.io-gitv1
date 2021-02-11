@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,11 +7,13 @@
     android:layout_height="match_parent"
     android:background="@color/mainBackgroud">
 
+
     <ImageView
         android:id="@+id/faqQuesBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
+        android:layout_marginTop="24dp"
         android:background="@drawable/faqquesbtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,35 +24,35 @@
         android:id="@+id/faqQuesBtnTwo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/faqQuesBtn"
         android:background="@drawable/faqquesbtntwo"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_below="@+id/faqQuesBtn"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintTop_toBottomOf="@+id/faqQuesBtn"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/faqQuesBtnThree"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/faqQuesBtnTwo"
         android:background="@drawable/faqquesbtnthree"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_below="@+id/faqQuesBtnTwo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"/>
-
+        app:layout_constraintTop_toBottomOf="@+id/faqQuesBtnTwo"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/faqQuesBtnFour"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/faqQuesBtnThree"
         android:background="@drawable/faqquesbtnfour"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_below="@+id/faqQuesBtnThree"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintTop_toBottomOf="@+id/faqQuesBtnThree"
+        tools:ignore="MissingConstraints" />
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

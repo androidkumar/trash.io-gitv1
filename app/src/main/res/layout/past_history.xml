@@ -72,10 +72,9 @@
         android:layout_below="@id/rectPastHistory"
         android:layout_alignEnd="@+id/pastHistoryTab"
         android:layout_marginTop="150dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/organicdetail"
         app:layout_constraintEnd_toEndOf="@+id/pastHistoryTab"
-        app:layout_constraintHorizontal_bias="0.92"
-        app:layout_constraintStart_toStartOf="@+id/pastHistoryTab"
         app:layout_constraintTop_toTopOf="@+id/pastHistoryTab"
         tools:ignore="MissingConstraints" />
 
@@ -86,10 +85,9 @@
         android:layout_below="@id/rectPastHistory"
         android:layout_alignEnd="@+id/pastHistoryTab"
         android:layout_marginTop="72dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/organicdetail"
         app:layout_constraintEnd_toEndOf="@+id/pastHistoryTab"
-        app:layout_constraintHorizontal_bias="0.92"
-        app:layout_constraintStart_toStartOf="@+id/pastHistoryTab"
         app:layout_constraintTop_toTopOf="@+id/pastHistoryTab"
         tools:ignore="MissingConstraints" />
 
@@ -100,10 +98,9 @@
         android:layout_below="@id/rectPastHistory"
         android:layout_alignEnd="@+id/pastHistoryTab"
         android:layout_marginTop="225dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/organicdetail"
         app:layout_constraintEnd_toEndOf="@+id/pastHistoryTab"
-        app:layout_constraintHorizontal_bias="0.92"
-        app:layout_constraintStart_toStartOf="@+id/pastHistoryTab"
         app:layout_constraintTop_toTopOf="@+id/pastHistoryTab"
         tools:ignore="MissingConstraints" />
 
@@ -114,10 +111,9 @@
         android:layout_below="@id/rectPastHistory"
         android:layout_alignEnd="@+id/pastHistoryTab"
         android:layout_marginTop="350dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/organicdetail"
         app:layout_constraintEnd_toEndOf="@+id/pastHistoryTab"
-        app:layout_constraintHorizontal_bias="0.92"
-        app:layout_constraintStart_toStartOf="@+id/pastHistoryTab"
         app:layout_constraintTop_toTopOf="@+id/pastHistoryTab"
         tools:ignore="MissingConstraints" />
 
@@ -128,10 +124,9 @@
         android:layout_below="@id/rectPastHistory"
         android:layout_alignEnd="@+id/pastHistoryTab"
         android:layout_marginTop="425dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/organicdetail"
         app:layout_constraintEnd_toEndOf="@+id/pastHistoryTab"
-        app:layout_constraintHorizontal_bias="0.92"
-        app:layout_constraintStart_toStartOf="@+id/pastHistoryTab"
         app:layout_constraintTop_toTopOf="@+id/pastHistoryTab"
         tools:ignore="MissingConstraints" />
 
@@ -142,10 +137,9 @@
         android:layout_below="@id/rectPastHistory"
         android:layout_alignEnd="@+id/pastHistoryTab"
         android:layout_marginTop="500dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/organicdetail"
         app:layout_constraintEnd_toEndOf="@+id/pastHistoryTab"
-        app:layout_constraintHorizontal_bias="0.92"
-        app:layout_constraintStart_toStartOf="@+id/pastHistoryTab"
         app:layout_constraintTop_toTopOf="@+id/pastHistoryTab"
         tools:ignore="MissingConstraints" />
 

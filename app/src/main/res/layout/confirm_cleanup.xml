@@ -22,13 +22,11 @@
         android:id="@+id/btnLater"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="437dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/later"
-        app:layout_constraintBottom_toBottomOf="@+id/confirmCleanup"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.84"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.71000004"
+        app:layout_constraintTop_toTopOf="@+id/confirmCleanup"
         tools:ignore="MissingConstraints" />
 
     <ImageView
