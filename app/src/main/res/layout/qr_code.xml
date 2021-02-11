@@ -65,7 +65,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/lilyImage"
-        android:layout_marginBottom="72dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/lilycollins"
         app:layout_constraintBottom_toTopOf="@+id/qrCode"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,23 +75,11 @@
 
 
     <ImageView
-        android:id="@+id/logoutImg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/lilyCollins"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/logoutimg"
-        app:layout_constraintBottom_toTopOf="@+id/qrCode"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
         android:id="@+id/qrCode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/lilyCollins"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="58dp"
         android:background="@drawable/qrcode"
         app:layout_constraintBottom_toTopOf="@+id/navBar"
         app:layout_constraintEnd_toEndOf="parent"

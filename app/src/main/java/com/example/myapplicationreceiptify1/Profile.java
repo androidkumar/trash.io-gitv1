@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Profile extends AppCompatActivity {
 
-    ImageView recycleBarProf, qrCodeBar, bellBar, profBar;
+    ImageView recycleBarProf, qrCodeBar, bellBar, profBar, logoutImg;
     TextView pointDetails, recentActivity, report, helpCentre;
 
     @Override
@@ -22,10 +22,21 @@ public class Profile extends AppCompatActivity {
         bellBar = (ImageView) findViewById(R.id.bellBar);
         profBar = (ImageView) findViewById(R.id.profBar);
 
+        logoutImg = (ImageView) findViewById(R.id.logoutImg);
+
         pointDetails = (TextView) findViewById(R.id.pointDetails);
         recentActivity = (TextView) findViewById(R.id.recentActivity);
         report = (TextView) findViewById(R.id.report);
         helpCentre = (TextView) findViewById(R.id.helpCentre);
+
+
+        logoutImg.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),SplashScreen.class));
+            }
+        });
 
 
         pointDetails.setOnClickListener(new View.OnClickListener(){

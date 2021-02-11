@@ -15,11 +15,22 @@
         android:layout_marginTop="24dp"
         android:background="@drawable/profileupbar"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
+    <ImageView
+        android:id="@+id/logoutImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logoutimg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/pointDetails"
+        android:layout_marginBottom="245dp"
+        android:layout_marginRight="245dp"
+        tools:ignore="MissingConstraints" />
     <TextView
         android:id="@+id/pointDetails"
         android:layout_width="wrap_content"
@@ -62,6 +73,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/report"
         android:layout_marginTop="16dp"
+        android:layout_marginRight="27dp"
         android:background="@drawable/helpcentre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
