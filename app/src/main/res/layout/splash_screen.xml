@@ -23,11 +23,11 @@
         app:srcCompat="@drawable/trashiologo"
         tools:ignore="MissingConstraints" />
 
-    <Button
+    <ImageView
         android:id="@+id/btnGetStarted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Get Started"
+        android:background="@drawable/getstartedbtn"
         app:layout_constraintBottom_toTopOf="@+id/loginText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

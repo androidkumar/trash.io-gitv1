@@ -23,8 +23,8 @@ import com.google.firebase.auth.GoogleAuthProvider;
 
 public class SignIn extends AppCompatActivity {
     EditText email, password;
-    Button btnSignIn;
-    TextView signUpText, backSymbol;
+    ImageView btnSignIn;
+    TextView  signUpText,backSymbol;
     ImageView signInPhone, facebookBtn, googleBtn;
     FirebaseAuth fAuth;
     DBHelper DB;
@@ -35,7 +35,7 @@ public class SignIn extends AppCompatActivity {
 
         email = (EditText) findViewById(R.id.textEmailAddress);
         password = (EditText) findViewById(R.id.textPassword);
-        btnSignIn = (Button) findViewById(R.id.btnSignIn);
+        btnSignIn = (ImageView) findViewById(R.id.btnSignIn);
         signUpText = (TextView) findViewById(R.id.signUpText);
         backSymbol = (TextView) findViewById(R.id.backSymbol);
         signInPhone = (ImageView) findViewById(R.id.signInPhone);

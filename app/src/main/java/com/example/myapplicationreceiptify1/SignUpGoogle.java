@@ -66,12 +66,14 @@ public class SignUpGoogle extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
         createRequest();
 
-        findViewById(R.id.google_signIn).setOnClickListener(new View.OnClickListener() {
+        googleSignIn.setOnClickListener(new View.OnClickListener() {
+
             @Override
-            public void onClick(View view) {
-                signIn();
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), QRCode.class));
             }
         });
+
     }
 
     private void createRequest() {
