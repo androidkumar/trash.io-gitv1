@@ -8,6 +8,10 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.firebase.auth.FirebaseAuth;
+
 public class Profile extends AppCompatActivity {
 
     ImageView recycleBarProf, qrCodeBar, bellBar, profBar, logoutImg;
@@ -21,9 +25,7 @@ public class Profile extends AppCompatActivity {
         qrCodeBar = (ImageView) findViewById(R.id.qrCodeBar);
         bellBar = (ImageView) findViewById(R.id.bellBar);
         profBar = (ImageView) findViewById(R.id.profBar);
-
         logoutImg = (ImageView) findViewById(R.id.logoutImg);
-
         pointDetails = (TextView) findViewById(R.id.pointDetails);
         recentActivity = (TextView) findViewById(R.id.recentActivity);
         report = (TextView) findViewById(R.id.report);
@@ -34,7 +36,9 @@ public class Profile extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),SplashScreen.class));
+                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(getApplicationContext(),SignIn.class);
+                startActivity(intent);
             }
         });
 

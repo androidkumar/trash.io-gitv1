@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "269573356704",
+    "project_id": "trashio-17828",
+    "storage_bucket": "trashio-17828.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269573356704:android:0b0dc2b4ae8773f6b05dc5",
+        "android_client_info": {
+          "package_name": "com.example.myapplicationreceiptify1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "269573356704-r497st2qqk08nfg66kr281uhlgqhplko.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplicationreceiptify1",
+            "certificate_hash": "5b9ddd8e7f492a2278351fc6075731acbfef1fe0"
+          }
+        },
+        {
+          "client_id": "269573356704-a6299r1tcb7fjnh2atpojh651hrbttea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFFNaJ8d1DAfBlgGGcHWskt4DW5Y0HEi8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "269573356704-a6299r1tcb7fjnh2atpojh651hrbttea.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
