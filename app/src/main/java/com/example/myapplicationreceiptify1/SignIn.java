@@ -120,5 +120,40 @@ public class SignIn extends AppCompatActivity {
                 });
             }
         });
+
+        signUpText.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),SignUp.class));
+            }
+        });
+
+        signInPhone.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),QRCode.class));
+                Toast.makeText(SignIn.this, "Sign In Successfully",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        facebookBtn.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),QRCode.class));
+                Toast.makeText(SignIn.this, "Sign In Successfully",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        googleBtn.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),QRCode.class));
+                Toast.makeText(SignIn.this, "Sign In Successfully",Toast.LENGTH_SHORT).show();
+            }
+        });
     }
-    }
+}
