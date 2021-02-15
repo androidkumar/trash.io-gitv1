@@ -52,7 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/signUpPhone"
-        android:layout_marginStart="2dp"
+        android:layout_marginStart="22dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/facebookbtn"
         app:layout_constraintStart_toStartOf="parent"
@@ -89,29 +89,27 @@
         android:layout_width="150dp"
         android:layout_height="30dp"
         android:layout_below="@id/orSignUp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="16dp"
         android:background="@color/white"
         android:hint=" Last name"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/signUpEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/orSignUp"
-        tools:ignore="MissingConstraints"/>
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/signUpPass"
         android:layout_width="320dp"
         android:layout_height="30dp"
         android:layout_below="@id/signUpUser"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="32dp"
         android:background="@color/white"
-        android:inputType="textPassword"
         android:hint=" Re-confirm Password"
-        app:layout_constraintBottom_toTopOf="@+id/signUp"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpRepass"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -119,14 +117,14 @@
         android:layout_width="320dp"
         android:layout_height="30dp"
         android:layout_below="@id/signUpPass"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="32dp"
         android:background="@color/white"
-        android:inputType="textPassword"
         android:ems="10"
         android:hint=" Password"
-        app:layout_constraintBottom_toTopOf="@+id/signUpPass"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpEmail"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -134,12 +132,12 @@
         android:layout_width="320dp"
         android:layout_height="30dp"
         android:layout_below="@id/signUpRepass"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="32dp"
         android:background="@color/white"
         android:hint=" Email Address"
-        app:layout_constraintBottom_toTopOf="@+id/signUpRepass"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpMobile"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -148,11 +146,9 @@
         android:layout_height="30dp"
         android:layout_below="@id/signUpEmail"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="32dp"
         android:background="@color/white"
         android:hint=" First name"
-        app:layout_constraintBottom_toTopOf="@+id/signUpEmail"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/orSignUp"
         tools:ignore="MissingConstraints" />

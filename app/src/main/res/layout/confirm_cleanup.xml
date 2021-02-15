@@ -9,10 +9,9 @@
     <ImageView
         android:id="@+id/confirmCleanup"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="400dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/confirmcleanup"
@@ -22,22 +21,21 @@
         android:id="@+id/btnLater"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="437dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="37dp"
         android:background="@drawable/later"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/confirmCleanup"
+        app:layout_constraintBottom_toBottomOf="@+id/confirmCleanup"
+        app:layout_constraintEnd_toEndOf="@+id/confirmCleanup"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/startNow"
         android:layout_width="140dp"
         android:layout_height="60dp"
-        android:layout_marginTop="464dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="42dp"
+        app:layout_constraintBottom_toBottomOf="@+id/confirmCleanup"
+        app:layout_constraintStart_toStartOf="@+id/confirmCleanup"
         tools:ignore="MissingConstraints" />
 
 
