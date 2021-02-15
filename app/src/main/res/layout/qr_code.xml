@@ -114,13 +114,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/qrCode"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="28dp"
         android:background="@drawable/qrcodebarunder"
         app:layout_constraintBottom_toBottomOf="@+id/navBar"
         app:layout_constraintStart_toEndOf="@+id/recycleBar"
         app:layout_constraintTop_toTopOf="@+id/navBar"
-        app:layout_constraintVertical_bias="0.45999998"
+        app:layout_constraintVertical_bias="0.19999999"
         tools:ignore="MissingConstraints" />
 
     <ImageView
