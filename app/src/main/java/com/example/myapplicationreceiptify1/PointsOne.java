@@ -23,7 +23,7 @@ public class PointsOne extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),BinDropdown.class));
+                startActivity(new Intent(getApplicationContext(),Profile.class));
             }
         });
 
