@@ -45,6 +45,7 @@
         <activity android:name=".PointsOne"/>
         <activity android:name=".MyVoucher"/>
         <activity android:name=".PointsHistory"/>
+        <activity android:name=".PointsHistoryUsed"/>
         <activity android:name=".EditProfile"/>
         <activity android:name=".Report"/>
         <activity android:name=".ReportDropdown"/>
