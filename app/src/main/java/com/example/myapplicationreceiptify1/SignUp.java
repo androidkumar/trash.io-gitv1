@@ -38,9 +38,8 @@ public class SignUp extends AppCompatActivity {
     EditText username, password, repassword;
     EditText email;
     EditText mobile;
-    Button signup;
     TextView loginText1, backSymbol;
-    ImageView facebookBtn, googleBtn, signUpPhone;
+    ImageView signup, facebookBtn, googleBtn, signUpPhone;
     FirebaseAuth fAuth;
     DBHelper DB;
 
@@ -59,7 +58,7 @@ public class SignUp extends AppCompatActivity {
         facebookBtn = (ImageView) findViewById(R.id.facebookBtn);
         googleBtn = (ImageView) findViewById(R.id.googleBtn);
         signUpPhone = (ImageView) findViewById(R.id.signUpPhone);
-        signup = (Button) findViewById(R.id.signUp);
+        signup = (ImageView) findViewById(R.id.signUp);
         loginText1 = (TextView) findViewById(R.id.loginText1);
         backSymbol = (TextView) findViewById(R.id.backSymbol);
         DB = new DBHelper(this);

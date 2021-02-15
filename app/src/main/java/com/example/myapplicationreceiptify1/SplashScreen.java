@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashScreen extends AppCompatActivity {
 
-    Button btnGetStarted;
+    ImageView btnGetStarted;
     TextView loginText;
 
 
@@ -19,7 +19,7 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
-        btnGetStarted = (Button) findViewById(R.id.btnGetStarted);
+        btnGetStarted = (ImageView) findViewById(R.id.btnGetStarted);
 
         loginText = (TextView) findViewById(R.id.loginText);
 

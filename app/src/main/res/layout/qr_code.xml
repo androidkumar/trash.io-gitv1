@@ -50,12 +50,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/receiveBtn"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/lilyimage"
-        app:layout_constraintBottom_toTopOf="@+id/lilyCollins"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCamera"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -63,12 +63,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/lilyImage"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/lilycollins"
-        app:layout_constraintBottom_toTopOf="@+id/qrCode"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lilyImage"
         tools:ignore="MissingConstraints" />
 
 
@@ -77,11 +77,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/lilyCollins"
-        android:layout_marginBottom="24dp"
         android:background="@drawable/qrcode"
         app:layout_constraintBottom_toTopOf="@+id/navBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lilyCollins"
         tools:ignore="MissingConstraints" />
 
     <ImageView
