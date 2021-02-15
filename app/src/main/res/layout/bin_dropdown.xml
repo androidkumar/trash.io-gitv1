@@ -109,12 +109,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/binThree"
-        android:layout_marginStart="56dp"
-        android:background="@drawable/recyclebar"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/recyclebarunder"
         app:layout_constraintBottom_toBottomOf="@+id/navBar"
         app:layout_constraintStart_toStartOf="@+id/navBar"
         app:layout_constraintTop_toTopOf="@+id/navBar"
-        app:layout_constraintVertical_bias="0.45999998"
+        app:layout_constraintVertical_bias="0.45"
         tools:ignore="MissingConstraints" />
 
     <ImageView

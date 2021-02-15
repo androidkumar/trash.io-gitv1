@@ -4,12 +4,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Faq extends AppCompatActivity {
 
     ImageView faqQuesBtn, faqQuesBtnTwo, faqQuesBtnThree, faqQuesBtnFour;
+    TextView backSymbol;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +20,7 @@ public class Faq extends AppCompatActivity {
         faqQuesBtnTwo = (ImageView) findViewById(R.id.faqQuesBtnTwo);
         faqQuesBtnThree = (ImageView) findViewById(R.id.faqQuesBtnThree);
         faqQuesBtnFour = (ImageView) findViewById(R.id.faqQuesBtnFour);
+        backSymbol = (TextView) findViewById(R.id.backSymbol);
 
         faqQuesBtn.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -47,6 +50,13 @@ public class Faq extends AppCompatActivity {
             }
         });
 
+        backSymbol.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),Profile.class));
+            }
+        });
     }
 
 }

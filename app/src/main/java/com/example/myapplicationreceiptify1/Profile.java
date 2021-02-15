@@ -15,7 +15,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Profile extends AppCompatActivity {
 
     ImageView recycleBarProf, qrCodeBar, bellBar, profBar, logoutImg;
-    TextView pointDetails, recentActivity, report, helpCentre;
+    TextView pointDetails, recentActivity, report, helpCentre, settingsInsideProf;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,7 @@ public class Profile extends AppCompatActivity {
         recentActivity = (TextView) findViewById(R.id.recentActivity);
         report = (TextView) findViewById(R.id.report);
         helpCentre = (TextView) findViewById(R.id.helpCentre);
-
+        settingsInsideProf = (TextView) findViewById(R.id.settingsInsideProf);
 
         logoutImg.setOnClickListener(new View.OnClickListener(){
 
@@ -68,6 +68,13 @@ public class Profile extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(),Faq.class));
+            }
+        });
+
+        settingsInsideProf.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),Settings.class));
             }
         });
 

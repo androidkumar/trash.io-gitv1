@@ -18,6 +18,15 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"/>
 
+    <ImageView
+        android:id="@+id/usedOption"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/backSymbolPoin"
+        tools:ignore="MissingConstraints" />
+
     <TextView
         android:id="@+id/backSymbolPoin"
         android:layout_width="wrap_content"

@@ -79,6 +79,21 @@
         app:layout_constraintTop_toBottomOf="@+id/report"
         tools:ignore="MissingConstraints" />
 
+    <TextView
+        android:id="@+id/settingsInsideProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="27dp"
+        android:background="@drawable/settingsinsideprof"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helpCentre"
+        tools:ignore="MissingConstraints" />
+
+
+
     <ImageView
         android:id="@+id/navBar"
         android:layout_width="wrap_content"
@@ -108,20 +123,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/helpCentre"
-        android:layout_marginStart="48dp"
         android:background="@drawable/qrcodebar"
         app:layout_constraintBottom_toBottomOf="@+id/navBar"
-        app:layout_constraintStart_toEndOf="@+id/recycleBarProf"
+
         app:layout_constraintTop_toTopOf="@+id/navBar"
         app:layout_constraintVertical_bias="0.44"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="152dp" />
 
     <ImageView
         android:id="@+id/bellBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/helpCentre"
-        android:layout_marginEnd="48dp"
+        android:layout_marginEnd="45dp"
         android:background="@drawable/bellbar"
         app:layout_constraintBottom_toBottomOf="@+id/navBar"
         app:layout_constraintEnd_toStartOf="@+id/profBar"
@@ -134,8 +149,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/helpCentre"
-        android:layout_marginEnd="56dp"
-        android:background="@drawable/profbar"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/profilebarunder"
         app:layout_constraintBottom_toBottomOf="@+id/navBar"
         app:layout_constraintEnd_toEndOf="@+id/navBar"
         app:layout_constraintTop_toTopOf="@+id/navBar"

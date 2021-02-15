@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +20,8 @@ import java.io.IOException;
 
 public class BinCapacity extends AppCompatActivity {
     ImageView  recycleBar, qrCodeBar, bellBar, profBar, binOne;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -30,6 +33,9 @@ public class BinCapacity extends AppCompatActivity {
         bellBar = (ImageView) findViewById(R.id.bellBar);
         profBar = (ImageView) findViewById(R.id.profBar);
         binOne = (ImageView) findViewById(R.id.binOne);
+
+
+
 
        binOne.setOnClickListener(new View.OnClickListener(){
 
